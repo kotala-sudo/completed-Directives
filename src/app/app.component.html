@@ -6,11 +6,11 @@
 </p>
 
 <p
-  *ngFor="let x of log"
+  *ngFor="let x of log , let i = index"
   [ngStyle]="{'background-color' : x > 4 ? 'green' : 'transparent' , 
               'font-size' : '2rem'
              }"
   [ngClass]="x > 4 ? 'special': ''"
 >
-  {{x}}. Hello World
+  {{i + 1}}. Hello World
 </p>
