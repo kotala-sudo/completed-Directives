@@ -7,7 +7,9 @@
 
 <p
   *ngFor="let x of log"
-  [ngStyle]="{'background-color' : x > 4 ? 'green' : 'transparent' , 'font-size' : '2rem'}"
+  [ngStyle]="{'background-color' : x > 4 ? 'green' : 'transparent' , 
+              'font-size' : '2rem'
+             }"
   [ngClass]="x > 4 ? 'special': ''"
 >
   {{x}}. Hello World
