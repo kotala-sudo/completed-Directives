@@ -13,6 +13,7 @@ export class AppComponent {
 
   onClick() {
     this.showOrHide = !this.showOrHide;
-    this.log.push(this.count++);
+    this.count++;
+    this.log.push(this.count);
   }
 }
